@@ -147,7 +147,7 @@
               <img src="img/icon_facebook.gif" alt="Facebook">
             </a>
           </div>
-          <form action="mailto:mayu.moriko@gmail.com" method="post" enctype="text/plain">
+          <form action="https://formsubmit.co/mayu.moriko@gmail.com" method="POST">
             <label for="name">お名前:</label>
             <input type="text" id="name" name="name" required><br><br>
           
@@ -156,6 +156,10 @@
           
             <label for="message">メッセージ:</label>
             <textarea id="message" name="message" required></textarea><br><br>
+          
+            <!-- 任意：スパム防止やリダイレクト -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://mayumori5161.github.io/thanks.html">
           
             <input type="submit" value="送信">
             <input type="reset" value="リセット">
